@@ -1,0 +1,38 @@
+ #include <stdio.h>
+ #include <conio.h>
+
+       void main()
+       {
+       	
+       	
+    int i, j, n, val[10][10], sum , sum1 , a , normal;
+    sum=0;
+    sum1=0;
+    a=0;
+
+    printf("\nEnter no. of rows");
+    scanf("%d", &n);
+
+    printf("\nEnter the %d elements : \n\n", n*n);r
+
+    for(i = 0; i < n; i++)   
+    {
+    for(j = 0; j < n; j++)  
+    {
+            scanf("%d", &val[i][j]);
+            a = val[i][j]*val[i][j];  // for square
+            sum1 += a;  
+        }
+    }
+    normal = sqrt(sum1);   
+
+    printf("The normal of the given matrix is %d", normal);
+    for(i = 0; i < n; i++)
+    {
+        sum = sum + val[i][i];  
+    }
+    printf("\n\nThe Trace of the given matrix is: %d", sum);
+       }
+
+       getch();
+   }
